@@ -1,3 +1,6 @@
 #BUILD CONTAINER CACE
-cd C:\Users\33685\Desktop\Programmation\Repository\CACE
-docker build -t cace:latest .
+docker build -t cace:latest C:\Users\33685\Desktop\Programmation\Repository\CACE\.
+
+
+#BUILD CONTAINER CACE
+docker build -t cace-db:latest C:\Users\33685\Desktop\Programmation\Repository\Devops\PowerShell\Mongodb\.
