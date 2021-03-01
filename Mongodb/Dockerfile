@@ -1,11 +1,15 @@
-FROM alpine:3.9
+FROM mongo
 
-RUN apk add --no-cache bash mongodb
-
-RUN mkdir -p /data/db && \
-    chown -R mongodb /data/db
+COPY Scripts/entrypoint.sh /opt/
+COPY Scripts/initMongoDb.js /docker-entrypoint-initdb.d/
 
 VOLUME /data/db
 EXPOSE 27017
 
-CMD [ "mongod", "--bind_ip", "0.0.0.0"]
+
+#CMD [ "mongod", "--bind_ip", "0.0.0.0"]
+
+#ENTRYPOINT ["/entrypoint.sh", "/opt/"]
+
+#CMD ["sh"]
+#CMD ["sh"]

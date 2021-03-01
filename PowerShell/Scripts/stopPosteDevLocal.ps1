@@ -4,5 +4,3 @@ docker stop cape
 docker rm cape
 docker stop cace-db
 docker rm cace-db
-docker stop portainer
-docker rm portainer
