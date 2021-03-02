@@ -2,5 +2,5 @@
 docker build -t cace:latest C:\Users\33685\Desktop\Programmation\Repository\CACE\.
 
 
-#BUILD CONTAINER CACE
+#BUILD CONTAINER CACE DB
 docker build -t cace-db:latest C:\Users\33685\Desktop\Programmation\Repository\Devops\Mongodb\.

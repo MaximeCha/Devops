@@ -1,0 +1,16 @@
+version: "3"
+services:
+  cace-db:
+    image: cace-db:latest
+    container_name: "cace-db"
+    volumes:
+      - C:\Users\33685\Desktop\Programmation\volume_docker
+    ports:
+      - 27017:27017
+  cace:
+    image: cace:latest
+    container_name: "cace"
+    ports:
+      - 8586:8586
+    links:
+      - cace-db
